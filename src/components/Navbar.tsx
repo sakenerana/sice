@@ -53,7 +53,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/97731657-df8f-4842-82c4-0d2b8abb6e1f.png" 
             alt="Saint Isidore Chorale Ensemble Logo" 
-            className="h-12 w-12"
+            className="h-16 w-16 object-contain" /* Increased size from h-12 w-12 to h-16 w-16 */
           />
           <div className={cn(
             "hidden sm:block",

@@ -45,7 +45,7 @@ const Navbar = () => {
         "fixed w-full z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-black/30 backdrop-blur-sm py-4" // Added semi-transparent background for better readability
+          : "bg-transparent py-4"
       )}
     >
       <div className="container flex justify-between items-center">
@@ -53,12 +53,9 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/97731657-df8f-4842-82c4-0d2b8abb6e1f.png" 
             alt="Saint Isidore Chorale Ensemble Logo" 
-            className="h-16 w-16 object-contain" /* Increased size from h-12 w-12 to h-16 w-16 */
+            className="h-12 w-12"
           />
-          <div className={cn(
-            "hidden sm:block",
-            !isScrolled && "text-white" // Make logo text white when navbar is transparent
-          )}>
+          <div className="hidden sm:block">
             <h1 className="font-playfair font-bold text-xl">SICE</h1>
             <p className="text-xs -mt-1">Saint Isidore Chorale Ensemble</p>
           </div>
@@ -74,16 +71,13 @@ const Navbar = () => {
                 "font-medium text-sm transition-colors hover:text-sice-orange",
                 location.pathname === link.path
                   ? "text-sice-orange"
-                  : isScrolled ? "text-foreground" : "text-white drop-shadow-md", // White text with shadow when transparent
+                  : "text-foreground"
               )}
             >
               {link.name}
             </Link>
           ))}
-          <Button className={cn(
-            "bg-gradient-orange-pink hover:opacity-90 transition-opacity",
-            !isScrolled && "shadow-md" // Add shadow to button when navbar is transparent
-          )}>
+          <Button className="bg-gradient-orange-pink hover:opacity-90 transition-opacity">
             Join Us
           </Button>
         </nav>
@@ -97,22 +91,19 @@ const Navbar = () => {
           <div className="w-6 flex flex-col gap-1.5">
             <span
               className={cn(
-                "block h-0.5 transition-transform duration-300",
-                isScrolled ? "bg-foreground" : "bg-white", // White hamburger when navbar is transparent
+                "block h-0.5 bg-foreground transition-transform duration-300",
                 isMobileMenuOpen && "rotate-45 translate-y-2"
               )}
             />
             <span
               className={cn(
-                "block h-0.5 transition-opacity duration-300",
-                isScrolled ? "bg-foreground" : "bg-white", // White hamburger when navbar is transparent
+                "block h-0.5 bg-foreground transition-opacity duration-300",
                 isMobileMenuOpen && "opacity-0"
               )}
             />
             <span
               className={cn(
-                "block h-0.5 transition-transform duration-300",
-                isScrolled ? "bg-foreground" : "bg-white", // White hamburger when navbar is transparent
+                "block h-0.5 bg-foreground transition-transform duration-300",
                 isMobileMenuOpen && "-rotate-45 -translate-y-2"
               )}
             />

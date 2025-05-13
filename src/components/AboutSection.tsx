@@ -11,7 +11,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-6">
-              About <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Our Choir</span>
+              About <span className="bg-yellow-500 ">Our Choir</span>
             </h2>
             <p className="text-gray-700 mb-6">
               Saint Isidore Chorale Ensemble (SICE) is a dynamic and passionate
@@ -42,7 +42,7 @@ const AboutSection = () => {
             </div>
             <Button
               asChild
-              className="bg-gradient-to-r from-yellow-800 via-yellow-700 hover:opacity-90"
+              className="bg-yellow-500 hover:opacity-90"
             >
               <Link to="/about">Learn More About Us</Link>
             </Button>

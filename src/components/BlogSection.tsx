@@ -36,7 +36,7 @@ const BlogSection = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-              Latest from <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Our Blog</span>
+              Latest from <span className="bg-yellow-500">Our Blog</span>
             </h2>
             <p className="max-w-2xl text-gray-600">
               Stories, insights, and updates from our choir community.

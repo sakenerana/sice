@@ -39,7 +39,7 @@ const MusicNotes = () => {
     switch(type) {
       case 'treble':
         return (
-          <img src="./img/palmleave.svg" alt="music" />
+          <img src="./img/music.svg" alt="music" />
         );
       case 'bass':
         return (
@@ -47,7 +47,7 @@ const MusicNotes = () => {
         );
       case 'quarter':
         return (
-          <img src="./img/palmleave.svg" alt="music" />
+          <img src="./img/music.svg" alt="music" />
         );
       case 'eighth':
         return (

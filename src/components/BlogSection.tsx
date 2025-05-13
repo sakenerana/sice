@@ -18,7 +18,7 @@ const BlogSection = () => {
       excerpt: "Thank you maam cathy for the great experience you have brought upon this children living unforgetable memories they will hold on to for life!",
       date: "May 1, 2025",
       image: "./img/pulong.jpg",
-      author: "Fr. Joseph Cruz"
+      author: "Charls Dave Erana"
     },
     {
       id: 3,

@@ -21,9 +21,9 @@ const TestimonialsSection = () => {
     },
     {
       id: 2,
-      quote: "I've watched these young people grow not only as musicians but as individuals deeply connected to their faith. Their dedication to both musical excellence and spiritual growth is truly inspirational. I stop for a reason because of my work.",
+      quote: "I've watched these young people grow not only as musicians but as individuals deeply connected to their faith. Their dedication to both musical excellence and spiritual growth is truly inspirational.",
       author: "Charls Dave Erana",
-      role: "Ex-Choir",
+      role: "Choir Member",
       image: "/img/dave.jpg",
     },
     {

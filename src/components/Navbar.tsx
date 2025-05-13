@@ -44,7 +44,7 @@ const Navbar = () => {
         "fixed w-full z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-transparent text-black"
+          : "bg-transparent"
       )}
     >
       <div className="container flex justify-center items-center">
@@ -56,9 +56,9 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={cn(
-                "font-medium text-sm transition-colors hover:text-sice-orange",
+                "font-medium text-sm transition-colors hover:text-white",
                 location.pathname === link.path
-                  ? "text-white"
+                  ? "text-red-500"
                   : "text-foreground"
               )}
             >

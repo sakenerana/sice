@@ -36,14 +36,14 @@ const BlogSection = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-              Latest from <span className="text-gradient-orange-pink">Our Blog</span>
+              Latest from <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Our Blog</span>
             </h2>
             <p className="max-w-2xl text-gray-600">
               Stories, insights, and updates from our choir community.
             </p>
           </div>
           <div className="mt-4 md:mt-0">
-            <Button asChild variant="outline" className="border-sice-orange text-sice-orange hover:bg-sice-orange hover:text-white">
+            <Button asChild variant="outline" className="border-amber-800 text-amber-800 hover:bg-amber-900 hover:text-white">
               <a href="https://www.facebook.com/profile.php?id=100091922100082" target="_blank">View All Posts</a>
             </Button>
           </div>
@@ -76,7 +76,7 @@ const BlogSection = () => {
                 <p className="text-gray-600 mb-4 flex-grow">{post.excerpt}</p>
                 <Link 
                   to={`/blog/${post.id}`}
-                  className="text-sice-orange font-medium hover:underline mt-auto flex items-center"
+                  className="text-amber-800 font-medium hover:underline mt-auto flex items-center"
                 >
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">

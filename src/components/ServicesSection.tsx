@@ -104,7 +104,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-            Our <span className="text-gradient-orange-pink">Services</span>
+            Our <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Services</span>
           </h2>
           <p className="max-w-2xl mx-auto text-gray-600">
             We offer a range of musical services for various occasions, bringing
@@ -118,7 +118,7 @@ const ServicesSection = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
-              <div className="w-14 h-14 bg-gradient-orange-pink text-white flex items-center justify-center rounded-lg mb-4">
+              <div className="w-14 h-14 bg-gradient-to-r from-yellow-800 via-yellow-700 text-white flex items-center justify-center rounded-lg mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
@@ -128,7 +128,7 @@ const ServicesSection = () => {
               <Link to={"/services"}>
                 <Button
                   variant="outline"
-                  className="w-full mt-auto border-sice-orange text-sice-orange hover:bg-sice-orange hover:text-white transition-colors"
+                  className="w-full mt-auto bg-teal-800 text-sice-orange hover:bg-sice-orange hover:text-white transition-colors"
                 >
                   Learn More
                 </Button>

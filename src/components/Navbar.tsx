@@ -66,7 +66,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="https://www.facebook.com/profile.php?id=100091922100082">
-            <Button className="bg-gradient-orange-pink hover:opacity-90 transition-opacity">
+            <Button className="bg-gradient-to-r from-yellow-800 via-yellow-700 hover:opacity-90 transition-opacity">
               Join Us
             </Button>
           </a>

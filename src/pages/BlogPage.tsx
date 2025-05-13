@@ -2,11 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import BlogSection from "@/components/BlogSection";
+import MusicNotes from "@/components/MusicNotes";
 
 const BlogPage = () => {
   return (
     <div className="pt-20">
-      <div className="bg-[url(./img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
+      <div className="bg-[url(/img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
         <div className="backdrop-blur-sm container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
@@ -20,6 +21,7 @@ const BlogPage = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16 max-w-4xl">
+        <MusicNotes />
         <article className="prose lg:prose-xl mx-auto">
           <header className="mb-8">
             <div className="flex items-center text-sm text-gray-500 mb-3">

@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Users, Music, Award, Heart } from "lucide-react";
+import MusicNotes from "@/components/MusicNotes";
 
 const AboutPage = () => {
   return (
     <div className="pt-20">
-      <div className="bg-[url(./img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <div className="bg-[url(/img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
+        <div className="backdrop-blur-sm container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center ">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
               About Us
@@ -19,8 +20,8 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
       <div className="container mx-auto px-4 py-16 md:py-24">
+        <MusicNotes />
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold font-playfair mb-6 text-gradient-orange-pink">

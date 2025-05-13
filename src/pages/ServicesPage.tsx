@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Music, Calendar, Headphones, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import MusicNotes from "@/components/MusicNotes";
 
 const ServicesPage = () => {
   const services = [
@@ -54,8 +55,8 @@ const ServicesPage = () => {
 
   return (
     <div className="pt-20">
-      <div className="bg-[url(./img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <div className="bg-[url(/img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
+        <div className="backdrop-blur-sm container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">Our Services</h1>
             <p className="text-lg">
@@ -66,6 +67,7 @@ const ServicesPage = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
+        <MusicNotes />
         <div className="max-w-4xl mx-auto mb-16">
           <p className="text-lg text-center text-gray-700 mb-12">
             The Saint Isidore Chorale Ensemble is dedicated to creating meaningful musical experiences that elevate any event or occasion. 

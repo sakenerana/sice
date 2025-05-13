@@ -48,19 +48,6 @@ const Navbar = () => {
       )}
     >
       <div className="container flex justify-center items-center">
-        {/* <Link to="/" className="flex items-center gap-2">
-          <img
-            src="./img/sicelogo.png"
-            alt="Saint Isidore Chorale Ensemble Logo"
-            className="h-24 w-24"
-          />
-          <div className="hidden sm:block">
-            <h1 className="font-playfair font-bold text-xl text-white">SICE</h1>
-            <p className="text-xs -mt-1 text-white">
-              Saint Isidore Chorale Ensemble
-            </p>
-          </div>
-        </Link> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-6 justify-center mt-8">

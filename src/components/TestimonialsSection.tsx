@@ -14,31 +14,24 @@ const TestimonialsSection = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      quote: "The Saint Isidore Chorale Ensemble brought such beauty and reverence to our daughter's wedding. Their voices filled the church with an atmosphere of divine love that made the ceremony truly unforgettable.",
-      author: "Elena Santos",
-      role: "Parent",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      quote: "Joining the choir has transformed my relationship with music and my faith. The supportive environment has helped me grow as a singer while deepening my spiritual journey.",
+      author: "Christian Borces",
+      role: "Choir Member",
+      image: "/img/christian.jpg",
     },
     {
       id: 2,
-      quote: "I've watched these young people grow not only as musicians but as individuals deeply connected to their faith. Their dedication to both musical excellence and spiritual growth is truly inspirational.",
-      author: "Fr. Michael Reyes",
-      role: "Parish Priest",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      quote: "I've watched these young people grow not only as musicians but as individuals deeply connected to their faith. Their dedication to both musical excellence and spiritual growth is truly inspirational. I stop for a reason because of my work.",
+      author: "Charls Dave Erana",
+      role: "Ex-Choir",
+      image: "/img/dave.jpg",
     },
     {
       id: 3,
-      quote: "Joining the choir has transformed my relationship with music and my faith. The supportive environment has helped me grow as a singer while deepening my spiritual journey.",
-      author: "Marco Diaz",
-      role: "Choir Member",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
-    },
-    {
-      id: 4,
       quote: "The workshop series conducted by SICE gave our church youth a newfound appreciation for sacred music. Their teaching methods are engaging and effective for all skill levels.",
-      author: "Maria Gonzales",
-      role: "Youth Minister",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1061&q=80",
+      author: "Ann Rhianne",
+      role: "Choir Leader",
+      image: "/img/ann.jpg",
     }
   ];
 

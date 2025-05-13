@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import MusicNotes from "@/components/MusicNotes";
 
 interface FaqItem {
   question: string;
@@ -48,7 +49,7 @@ const FaqPage = () => {
 
   return (
     <div className="pt-20">
-      <div className="bg-[url(./img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
+      <div className="bg-[url(/img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
         <div className="backdrop-blur-sm container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
@@ -62,6 +63,7 @@ const FaqPage = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        <MusicNotes />
         <h2 className="text-3xl font-bold font-playfair mb-8 text-center">
           FAQ page content will be added in the next update
         </h2>

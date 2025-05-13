@@ -47,7 +47,7 @@ const Navbar = () => {
           : "bg-transparent text-black"
       )}
     >
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-center items-center">
         {/* <Link to="/" className="flex items-center gap-2">
           <img
             src="./img/sicelogo.png"

@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[url(/img/sice-bg.png)] bg-no-repeat bg-cover text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-[url(/img/gradientgreen.png)] bg-no-repeat bg-cover text-white overflow-hidden">
       <MusicNotes />
       <div className="container mx-auto px-4 z-10 py-24">
         <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">

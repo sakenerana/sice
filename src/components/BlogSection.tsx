@@ -6,27 +6,27 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Our Journey to the Regional Choir Festival",
+      title: "Confirmation Done",
       excerpt: "Experience the highlights of our performance at this year's regional choir festival and the lessons we learned along the way.",
-      date: "May 8, 2025",
-      image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      author: "Maria Santos"
+      date: "May 10, 2025",
+      image: "./img/confirmation.png",
+      author: "Charls Dave Erana"
     },
     {
       id: 2,
-      title: "The Spiritual Impact of Sacred Music",
-      excerpt: "Exploring how sacred music touches the soul and deepens our connection to faith and spirituality.",
-      date: "April 22, 2025",
-      image: "https://images.unsplash.com/photo-1610805156431-833675221166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      title: "Kusog Panaghiusa ",
+      excerpt: "Thank you maam cathy for the great experience you have brought upon this children living unforgetable memories they will hold on to for life!",
+      date: "May 1, 2025",
+      image: "./img/pulong.jpg",
       author: "Fr. Joseph Cruz"
     },
     {
       id: 3,
-      title: "Vocal Training Tips for Young Singers",
-      excerpt: "Essential techniques and practices to help young singers develop their vocal abilities and confidence.",
-      date: "April 10, 2025",
-      image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      author: "Antonio Reyes"
+      title: "Saint Isidore Chorale Ensemble ",
+      excerpt: "The priest homily states that 'There is always sunshine after the rain. It stands significant role to be patient and meek for hope is at hand.'",
+      date: "April 20, 2025",
+      image: "./img/april20.jpg",
+      author: "Charls Dave Erana"
     }
   ];
 
@@ -44,7 +44,7 @@ const BlogSection = () => {
           </div>
           <div className="mt-4 md:mt-0">
             <Button asChild variant="outline" className="border-sice-orange text-sice-orange hover:bg-sice-orange hover:text-white">
-              <Link to="/blog">View All Posts</Link>
+              <a href="https://www.facebook.com/profile.php?id=100091922100082" target="_blank">View All Posts</a>
             </Button>
           </div>
         </div>
@@ -92,18 +92,8 @@ const BlogSection = () => {
         <div className="mt-16 text-center">
           <h3 className="text-xl md:text-2xl font-semibold mb-4">Never Miss an Update</h3>
           <p className="max-w-xl mx-auto text-gray-600 mb-8">
-            Subscribe to our newsletter to receive the latest news, event announcements, and blog posts directly in your inbox.
+            Join to our Choir to receive the latest news, event announcements, and blog posts.
           </p>
-          <div className="flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sice-orange flex-grow"
-            />
-            <Button className="bg-sice-orange hover:bg-sice-darkOrange">
-              Subscribe
-            </Button>
-          </div>
         </div>
       </div>
     </section>

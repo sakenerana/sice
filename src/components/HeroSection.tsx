@@ -24,7 +24,7 @@ const HeroSection = () => {
             />
             <h1 className="flex flex-wrap text-center justify-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
               Saint Isidore
-              <span className="pb-[-10px] mb-[-10px] bg-gradient-to-r from-rose-800 via-rose-700">
+              <span className="pb-[-10px] mb-[-10px] bg-gradient-to-r from-yellow-800 via-yellow-700">
                 Chorale Ensemble
               </span>
             </h1>

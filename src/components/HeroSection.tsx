@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[url(/img/gradientgreen.png)] bg-no-repeat bg-cover text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-r from-lime-900 via-lime-800 to-lime-600 bg-no-repeat bg-cover text-white overflow-hidden">
       <MusicNotes />
       <div className="container mx-auto px-4 z-10 py-24">
         <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
@@ -24,7 +24,7 @@ const HeroSection = () => {
             />
             <h1 className="flex flex-wrap text-center justify-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
               Saint Isidore
-              <span className="pb-[-10px] mb-[-10px] bg-gradient-to-r from-indigo-600 via-pink-600">
+              <span className="pb-[-10px] mb-[-10px] bg-gradient-to-r from-rose-800 via-rose-700">
                 Chorale Ensemble
               </span>
             </h1>
@@ -38,12 +38,12 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link to="/services">
-              <Button className="bg-sice-orange hover:bg-sice-darkOrange text-white">
+              <Button className="bg-yellow-950 hover:bg-sice-darkOrange text-white">
                 Our Services
               </Button>
             </Link>
             <Link to="/contact">
-              <Button className="border-white text-white hover:bg-white/10">
+              <Button className="bg-yellow-950 border-white text-white hover:bg-white/10">
                 Contact Us
               </Button>
             </Link>

@@ -137,7 +137,7 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-sice-orange to-sice-pink rounded-xl overflow-hidden shadow-xl">
+        <div className="mt-16 bg-lime-900 rounded-xl overflow-hidden shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 md:p-12 text-white">
               <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">

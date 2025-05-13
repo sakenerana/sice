@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -45,24 +44,26 @@ const Navbar = () => {
         "fixed w-full z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-transparent py-4"
+          : "bg-transparent text-black"
       )}
     >
       <div className="container flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
-          <img 
-            src="/lovable-uploads/97731657-df8f-4842-82c4-0d2b8abb6e1f.png" 
-            alt="Saint Isidore Chorale Ensemble Logo" 
-            className="h-12 w-12"
+        {/* <Link to="/" className="flex items-center gap-2">
+          <img
+            src="./img/sicelogo.png"
+            alt="Saint Isidore Chorale Ensemble Logo"
+            className="h-24 w-24"
           />
           <div className="hidden sm:block">
-            <h1 className="font-playfair font-bold text-xl">SICE</h1>
-            <p className="text-xs -mt-1">Saint Isidore Chorale Ensemble</p>
+            <h1 className="font-playfair font-bold text-xl text-white">SICE</h1>
+            <p className="text-xs -mt-1 text-white">
+              Saint Isidore Chorale Ensemble
+            </p>
           </div>
-        </Link>
+        </Link> */}
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6 justify-center mt-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -70,16 +71,18 @@ const Navbar = () => {
               className={cn(
                 "font-medium text-sm transition-colors hover:text-sice-orange",
                 location.pathname === link.path
-                  ? "text-sice-orange"
+                  ? "text-white"
                   : "text-foreground"
               )}
             >
               {link.name}
             </Link>
           ))}
-          <Button className="bg-gradient-orange-pink hover:opacity-90 transition-opacity">
-            Join Us
-          </Button>
+          <a href="https://www.facebook.com/profile.php?id=100091922100082">
+            <Button className="bg-gradient-orange-pink hover:opacity-90 transition-opacity">
+              Join Us
+            </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}

@@ -54,11 +54,11 @@ const ServicesPage = () => {
 
   return (
     <div className="pt-20">
-      <div className="bg-gray-900 text-white py-16 md:py-24">
+      <div className="bg-[url(./img/sice2.jpg)] bg-no-repeat bg-cover text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">Our Services</h1>
-            <p className="text-lg opacity-80">
+            <p className="text-lg">
               Bringing harmony and inspiration to every occasion through the power of choral music.
             </p>
           </div>

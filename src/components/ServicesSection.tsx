@@ -117,7 +117,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[url(./img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col shadow-xl"
+              className="bg-[url(img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col shadow-xl"
             >
               <div className="w-14 h-14 bg-gradient-to-t from-lime-700 via-lime-500 text-white flex items-center justify-center rounded-lg mb-4">
                 {service.icon}

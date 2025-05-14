@@ -31,19 +31,19 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-[url(/img/notebook.png)] bg-cover bg-no-repeat border-t-8 border-yellow-500">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
               Latest from <span className="bg-yellow-500">Our Blog</span>
             </h2>
-            <p className="max-w-2xl text-gray-600">
+            <p className="max-w-2xl text-gray-500 backdrop-blur-md">
               Stories, insights, and updates from our choir community.
             </p>
           </div>
           <div className="mt-4 md:mt-0">
-            <Button asChild variant="outline" className="border-amber-800 text-amber-800 hover:bg-amber-900 hover:text-white">
+            <Button asChild variant="outline" className="bg-yellow-950 hover:bg-sice-darkOrange text-white">
               <a href="https://www.facebook.com/profile.php?id=100091922100082" target="_blank">View All Posts</a>
             </Button>
           </div>
@@ -91,7 +91,7 @@ const BlogSection = () => {
         
         <div className="mt-16 text-center">
           <h3 className="text-xl md:text-2xl font-semibold mb-4">Never Miss an Update</h3>
-          <p className="max-w-xl mx-auto text-gray-600 mb-8">
+          <p className="max-w-xl mx-auto text-gray-600 mb-8 backdrop-blur-md">
             Join to our Choir to receive the latest news, event announcements, and blog posts.
           </p>
         </div>

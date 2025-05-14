@@ -97,7 +97,7 @@ export default {
                 'fade-in': {
                     '0%': {
                         opacity: '0',
-                        transform: 'translateY(10px)'
+                        transform: 'translateY(20px)'
                     },
                     '100%': {
                         opacity: '1',
@@ -116,10 +116,10 @@ export default {
                 },
                 'float': {
                     '0%, 100%': {
-                        transform: 'translateY(0)'
+                        transform: 'translateY(-0px)'
                     },
                     '50%': {
-                        transform: 'translateY(-10px)'
+                        transform: 'translateY(-30px)'
                     }
                 },
 			},

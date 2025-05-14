@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import MusicNotes from "./MusicNotes";
 
 interface Testimonial {
   id: number;
@@ -50,11 +51,11 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[#e8dfd3] relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-sice-orange opacity-5 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-sice-pink opacity-5 rounded-full transform translate-x-1/3 translate-y-1/3"></div>
-      
+      <MusicNotes />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
@@ -67,6 +68,7 @@ const TestimonialsSection = () => {
 
         <div className="max-w-4xl mx-auto">
           {/* Testimonial Carousel */}
+          
           <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-10">
             <svg 
               xmlns="http://www.w3.org/2000/svg" 

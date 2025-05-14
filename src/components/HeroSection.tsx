@@ -20,7 +20,7 @@ const HeroSection = () => {
             <img
               src="./img/sicelogo.png"
               alt="SICE Logo"
-              className="w-64 h-64 mx-auto mb-[-30px]"
+              className="w-64 h-64 mx-auto mb-[-30px] animate-float"
             />
             <h1 className="flex flex-wrap text-center justify-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
               Saint Isidore

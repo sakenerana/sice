@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import MusicNotes from "./MusicNotes";
 
 const AboutSection = () => {
   return (
     <section
       id="about-section"
-      className="py-16 md:py-24 bg-white relative overflow-hidden"
+      className="py-16 md:py-24 bg-[url(/img/notebg.jpg)] bg-cover bg-no-repeat relative overflow-hidden border-t-8 border-yellow-600"
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -13,14 +14,14 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-6">
               About <span className="bg-yellow-500 ">Our Choir</span>
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-white mb-6 backdrop-blur-md">
               Saint Isidore Chorale Ensemble (SICE) is a dynamic and passionate
               group dedicated to glorifying God through music. Founded with the
               mission to inspire youth to develop their musical talents while
               strengthening their spiritual connection, we bring together voices
               of all ages to create harmonious worship.
             </p>
-            <p className="text-gray-700 mb-6">
+            <p className="text-white mb-6 backdrop-blur-md">
               Our repertoire spans sacred hymns, contemporary worship songs, and
               classical pieces. We perform at church services, community events,
               and special occasions, bringing joy and inspiration through our
@@ -42,7 +43,7 @@ const AboutSection = () => {
             </div>
             <Button
               asChild
-              className="bg-yellow-500 hover:opacity-90"
+              className="bg-yellow-950 hover:bg-sice-darkOrange text-white"
             >
               <Link to="/about">Learn More About Us</Link>
             </Button>
@@ -61,7 +62,7 @@ const AboutSection = () => {
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-gradient-to-r from-yellow-800 via-yellow-700 text-white flex items-center justify-center rounded-full mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +87,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-gradient-to-r from-lime-800 via-lime-700 text-white flex items-center justify-center rounded-full mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +114,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-gradient-to-r from-teal-800 via-teal-700 text-white flex items-center justify-center rounded-full mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +139,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-gradient-to-r from-amber-800 via-amber-700 text-white flex items-center justify-center rounded-full mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

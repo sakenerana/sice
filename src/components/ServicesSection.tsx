@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import MusicNotes from "./MusicNotes";
 
 const ServicesSection = () => {
   const services = [
@@ -100,35 +101,35 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-[#e8dfd3]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-            Our <span className="bg-yellow-500">Services</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4 text-gray-800">
+            Our <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Services</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-600">
+          <p className="max-w-2xl mx-auto text-gray-800">
             We offer a range of musical services for various occasions, bringing
             harmony and inspiration to every event.
           </p>
         </div>
-
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              className="bg-[url(img/palm.gif)] bg-cover bg-no-repeat p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col shadow-xl"
             >
               <div className="w-14 h-14 bg-gradient-to-t from-lime-700 via-lime-500 text-white flex items-center justify-center rounded-lg mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-6 flex-grow">
+              <p className="text-gray-950 mb-6 flex-grow">
                 {service.description}
               </p>
               <Link to={"/services"}>
                 <Button
                   variant="outline"
-                  className="w-full mt-auto bg-lime-900 text-white hover:bg-sice-orange hover:text-white transition-colors"
+                  className="w-full mt-auto bg-yellow-950 hover:bg-sice-darkOrange text-white hover:text-white transition-colors"
                 >
                   Learn More
                 </Button>
@@ -137,9 +138,10 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-lime-900 rounded-xl overflow-hidden shadow-xl">
+        <div className="mt-16 relative bg-lime-900 text-xs-[200px] rounded-xl overflow-hidden shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="p-8 md:p-12 text-white">
+            <div className="p-8 md:p-12 text-white justify-end">
+              <MusicNotes />
               <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">
                 Need our choir for your event?
               </h3>

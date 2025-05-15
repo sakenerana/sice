@@ -38,7 +38,7 @@ const BlogSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
               Latest from <span className="bg-yellow-500">Our Blog</span>
             </h2>
-            <p className="max-w-2xl text-gray-500 backdrop-blur-md">
+            <p className="max-w-2xl text-gray-900 backdrop-blur-md">
               Stories, insights, and updates from our choir community.
             </p>
           </div>
@@ -53,7 +53,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <article 
               key={post.id} 
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
+              className="bg-orange-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
             >
               <div className="relative h-48 overflow-hidden">
                 <img 

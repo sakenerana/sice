@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-[#e8dfd3] relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[#e8dfd3] relative overflow-hidden border-t-8 border-amber-700">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-sice-orange opacity-5 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-sice-pink opacity-5 rounded-full transform translate-x-1/3 translate-y-1/3"></div>
@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-            What People <span className="text-gradient-orange-pink">Are Saying</span>
+            What People <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Are Saying</span>
           </h2>
           <p className="max-w-2xl mx-auto text-gray-600">
             Hear from members of our community about their experiences with our choir.

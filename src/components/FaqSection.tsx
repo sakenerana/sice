@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import MusicNotes from "./MusicNotes";
 
 interface FaqItem {
   question: string;
@@ -42,21 +43,24 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-gradient-to-r from-yellow-950 to-yellow-900 bg-no-repeat bg-cover text-white border-t-8 border-amber-800">
+      <MusicNotes />
       <div className="container mx-auto px-4">
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-            Frequently <span className="text-gradient-orange-pink">Asked Questions</span>
+            Frequently <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Asked Questions</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-600">
+          <p className="max-w-2xl mx-auto text-white">
             Get answers to common questions about our choir and services.
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
+
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="mb-4 border-b border-gray-200 pb-4 last:border-b-0 last:pb-0"
             >
               <button
@@ -69,15 +73,15 @@ const FaqSection = () => {
                   "transform transition-transform duration-200",
                   openIndex === index ? "rotate-180" : ""
                 )}>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="20" 
-                    height="20" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
@@ -88,7 +92,7 @@ const FaqSection = () => {
                 "overflow-hidden transition-all max-h-0 duration-300",
                 openIndex === index ? "max-h-96" : ""
               )}>
-                <p className="py-4 text-gray-600">
+                <p className="py-4 text-gray-600 text-white">
                   {faq.answer}
                 </p>
               </div>
@@ -101,15 +105,15 @@ const FaqSection = () => {
             Still have questions? We're here to help!
           </p>
           <div className="inline-flex gap-4">
-            <a 
-              href="/faq" 
+            <a
+              href="/faq"
               className="text-sice-orange font-medium hover:text-sice-darkOrange transition-colors"
             >
               View All FAQs
             </a>
             <span>|</span>
-            <a 
-              href="/contact" 
+            <a
+              href="/contact"
               className="text-sice-orange font-medium hover:text-sice-darkOrange transition-colors"
             >
               Contact Us

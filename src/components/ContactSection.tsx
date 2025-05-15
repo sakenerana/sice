@@ -17,19 +17,19 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[url(/img/book.png)] bg-cover bg-no-repeat w-[100%] relative overflow-hidden border-t-8 border-yellow-600">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
-            Get in <span className="text-gradient-orange-pink">Touch</span>
+            Get in <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">Touch</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-600">
+          <p className="max-w-2xl mx-auto text-gray-600 backdrop-blur-sm text-gray-900">
             Have questions or want to book our choir? Reach out to us!
           </p>
         </div>
         <MusicNotes />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 order-2 lg:order-1">
+          <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat rounded-lg shadow-lg p-6 md:p-8 order-2 lg:order-1">
             <h3 className="text-2xl font-semibold mb-6">Send us a message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -99,7 +99,7 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="bg-gradient-orange-pink hover:opacity-90 w-full"
+                className="bg-amber-950 hover:opacity-90 w-full"
               >
                 Send Message
               </Button>
@@ -107,7 +107,7 @@ const ContactSection = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-8">
+            <div className="bg-[url(/img/palm.gif)] rounded-lg shadow-lg p-6 md:p-8 mb-8">
               <h3 className="text-2xl font-semibold mb-6">
                 Contact Information
               </h3>
@@ -228,7 +228,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-orange-pink text-white p-6 rounded-lg shadow-lg">
+            <div className="bg-amber-950 text-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">
                 Interested in joining our choir?
               </h3>

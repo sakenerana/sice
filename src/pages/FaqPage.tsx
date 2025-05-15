@@ -53,7 +53,7 @@ const FaqPage = () => {
         <div className="backdrop-blur-sm container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
-              Frequently Asked Questions
+              FAQ
             </h1>
             <p className="text-lg">
               Find answers to common questions about our choir.
@@ -62,21 +62,18 @@ const FaqPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="mx-auto px-4 py-16  bg-gradient-to-r from-yellow-950 to-yellow-900 bg-no-repeat bg-cover text-white border-t-8 border-amber-800">
         <MusicNotes />
-        <h2 className="text-3xl font-bold font-playfair mb-8 text-center">
-          FAQ page content will be added in the next update
-        </h2>
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 ">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
                 Frequently{" "}
-                <span className="text-gradient-orange-pink">
+                <span className="bg-gradient-to-r from-yellow-800 via-yellow-700">
                   Asked Questions
                 </span>
               </h2>
-              <p className="max-w-2xl mx-auto text-gray-600">
+              <p className="max-w-2xl mx-auto text-white">
                 Get answers to common questions about our choir and services.
               </p>
             </div>
@@ -120,7 +117,7 @@ const FaqPage = () => {
                       openIndex === index ? "max-h-96" : ""
                     )}
                   >
-                    <p className="py-4 text-gray-600">{faq.answer}</p>
+                    <p className="py-4 text-white">{faq.answer}</p>
                   </div>
                 </div>
               ))}

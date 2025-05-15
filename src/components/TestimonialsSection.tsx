@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Testimonial Carousel */}
           
-          <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-10">
+          <div className="relative bg-[url(/img/palm.gif)] rounded-xl shadow-lg p-6 md:p-10">
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="60" 

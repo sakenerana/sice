@@ -13,7 +13,7 @@ const TestimonialsPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="mx-auto">
         <MusicNotes />
         <TestimonialsSection />
       </div>

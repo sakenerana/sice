@@ -97,7 +97,7 @@ const Navbar = () => {
               )}
             />
           </div>
-          <div className="ml-10">Contact Us: +639329446383</div>
+          <div className="ml-10">For Donation: +639329446383</div>
         </button>
       </div>
 

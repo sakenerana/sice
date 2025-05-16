@@ -66,25 +66,25 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 md:py-24">
+      <div className="bg-[url(/img/notebook.png)] bg-cover bg-no-repeat border-t-8 border-yellow-500 mx-auto px-4 py-16 md:py-24">
         <MusicNotes />
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-lg text-center text-gray-700 mb-12">
+          <p className="text-lg text-center text-gray-900 backdrop-blur-md mb-12">
             The Saint Isidore Chorale Ensemble is dedicated to creating meaningful musical experiences that elevate any event or occasion. 
             Our versatile group of talented vocalists offers a range of services designed to bring the transformative power of choral music to diverse audiences and settings.
           </p>
 
           <div className="space-y-16">
             {services.map((service, index) => (
-              <div key={index} className="flex flex-col md:flex-row gap-8">
+              <div key={index} className="flex flex-col md:flex-row gap-8 backdrop-blur-md">
                 <div className="md:w-1/3 flex justify-center md:justify-start">
-                  <div className="w-20 h-20 bg-gradient-orange-pink rounded-lg flex items-center justify-center text-white shadow-lg">
+                  <div className="w-20 h-20 bg-amber-900 rounded-lg flex items-center justify-center text-white shadow-lg">
                     {service.icon}
                   </div>
                 </div>
                 <div className="md:w-2/3">
                   <h2 className="text-3xl font-bold font-playfair mb-4">{service.title}</h2>
-                  <p className="text-gray-700 mb-6">{service.description}</p>
+                  <p className="text-gray-950 mb-6">{service.description}</p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                     {service.points.map((point, i) => (
                       <li key={i} className="flex items-center">
@@ -99,28 +99,28 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-xl p-8 md:p-12 max-w-4xl mx-auto mb-16">
+        <div className="bg-[url(/img/palm.gif)] rounded-xl p-8 md:p-12 max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold font-playfair mb-6 text-center">Why Choose Us?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <Card className="border-none shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-yellow-800 text-white border-none shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-xl mb-3">Experienced Singers</h3>
-                <p className="text-gray-700">Our choir consists of dedicated vocalists with years of performance experience across various musical styles and venues.</p>
+                <p className="text-white">Our choir consists of dedicated vocalists with years of performance experience across various musical styles and venues.</p>
               </CardContent>
             </Card>
             
-            <Card className="border-none shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-yellow-800 text-white border-none shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-xl mb-3">Flexible Arrangements</h3>
-                <p className="text-gray-700">We adapt our performances to suit your specific needs, from intimate gatherings to large-scale events with customized repertoires.</p>
+                <p className="text-white">We adapt our performances to suit your specific needs, from intimate gatherings to large-scale events with customized repertoires.</p>
               </CardContent>
             </Card>
             
-            <Card className="border-none shadow-sm hover:shadow-md transition-shadow">
+            <Card className="bg-yellow-800 text-white border-none shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-xl mb-3">Passion for Connection</h3>
-                <p className="text-gray-700">We believe in music's power to unite people, creating meaningful experiences that resonate with audiences and participants alike.</p>
+                <p className="text-white">We believe in music's power to unite people, creating meaningful experiences that resonate with audiences and participants alike.</p>
               </CardContent>
             </Card>
           </div>
@@ -130,7 +130,7 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-sice-orange to-sice-pink rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+        <div className="bg-amber-900 rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
           <div className="p-8 md:p-12 text-white text-center">
             <h2 className="text-3xl font-bold font-playfair mb-4">Ready to Bring Your Event to Life?</h2>
             <p className="mb-8 text-lg max-w-2xl mx-auto">

@@ -60,7 +60,7 @@ const BlogPage = () => {
               in harmony with others offers benefits that extend far beyond
               music.
             </p>
-
+            
             <div className="w-full h-80 mb-6 overflow-hidden rounded-lg">
               <img
                 src="./img/sice-m.jpg"

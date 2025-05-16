@@ -48,7 +48,6 @@ const Navbar = () => {
       )}
     >
       <div className="container flex justify-center items-center">
-
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-6 justify-center mt-8">
           {navLinks.map((link) => (
@@ -74,7 +73,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2"
+          className="flex lg:hidden p-2 mt-20 mx-auto"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -98,6 +97,7 @@ const Navbar = () => {
               )}
             />
           </div>
+          <div className="ml-10">Contact Us: +639329446383</div>
         </button>
       </div>
 
@@ -123,9 +123,11 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-gradient-orange-pink hover:opacity-90 transition-opacity w-full mt-2">
-            Join Us
-          </Button>
+          <a href="https://www.facebook.com/profile.php?id=100091922100082">
+            <Button className="bg-gradient-to-r from-yellow-800 via-yellow-700 hover:opacity-90 transition-opacity w-full mt-2">
+              Join Us
+            </Button>
+          </a>
         </div>
       </div>
     </header>

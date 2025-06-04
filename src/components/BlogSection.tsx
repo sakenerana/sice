@@ -31,7 +31,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[url(/img/notebook.png)] bg-cover bg-no-repeat border-t-8 border-yellow-500">
+    <section className="py-16 md:py-24 bg-[#e8dfd3] border-t-8 border-yellow-500">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div>

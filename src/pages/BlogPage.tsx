@@ -20,14 +20,14 @@ const BlogPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
+      <div className="mx-auto px-4 py-16 max-w-4xl">
         <MusicNotes />
-        <article className="prose lg:prose-xl mx-auto">
-          <header className="mb-8">
+        <div className="prose lg:prose-xl ">
+          <div className="mb-8">
             <div className="flex items-center text-sm text-gray-500 mb-3">
               <span>May 10, 2025</span>
               <span className="mx-2">•</span>
-              <span>By Maria Santos</span>
+              <span>Charls Dave Erana</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold font-playfair mb-4">
               5 Surprising Benefits of Singing in a Choir
@@ -39,7 +39,7 @@ const BlogPage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-          </header>
+          </div>
 
           <div className="text-gray-700 space-y-6">
             <p className="text-lg">
@@ -60,7 +60,7 @@ const BlogPage = () => {
               in harmony with others offers benefits that extend far beyond
               music.
             </p>
-
+            
             <div className="w-full h-80 mb-6 overflow-hidden rounded-lg">
               <img
                 src="./img/sice-m.jpg"
@@ -163,7 +163,7 @@ const BlogPage = () => {
               after week."
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg my-8 border-l-4 border-sice-orange">
+            <div className="bg-gray-50 p-6 rounded-lg my-8 border-l-4 border-amber-900">
               <h3 className="text-xl font-bold mb-2">
                 Member Spotlight: Rebecca's Story
               </h3>
@@ -196,7 +196,7 @@ const BlogPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center my-12">
               <Button
                 asChild
-                className="bg-sice-orange hover:bg-sice-darkOrange"
+                className="bg-amber-900 hover:bg-sice-darkOrange"
               >
                 <Link to="/contact" className="flex items-center">
                   Register for Next Open Rehearsal
@@ -206,17 +206,16 @@ const BlogPage = () => {
               <Button
                 asChild
                 variant="outline"
-                className="border-sice-orange text-sice-orange hover:bg-sice-orange hover:text-white"
+                className="border-amber-900 text-amber-900 hover:bg-sice-orange hover:text-white hover:border-sice-orange"
               >
                 <Link to="/about">Learn More About Our Choir</Link>
               </Button>
             </div>
           </div>
-        </article>
-
-        <div className="mt-16 border-t pt-12">
-          <BlogSection />
         </div>
+      </div>
+      <div>
+        <BlogSection />
       </div>
     </div>
   );

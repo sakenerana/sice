@@ -7,6 +7,39 @@ import { Resend } from 'resend';
 const ContactSection = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
+  // key: re_E2PAkZZr_HtVipKDnBhYED18RkJvbbBcM
+
+  const sendMailto = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get("name") as string,
+        email: formData.get("email") as string,
+        subject: formData.get("subject") as string,
+        message: formData.get("message") as string,
+      };
+
+      // Basic validation
+      if (!data.name || !data.email || !data.subject || !data.message) {
+        throw new Error("Please fill in all fields");
+      }
+      window.location.href = `mailto:sakenerana@gmail.com?subject=${data.subject}&body=${data.name, data.message}`;
+      setIsLoading(false);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error sending message",
+        description: error instanceof Error ? error.message : "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -92,7 +125,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat rounded-lg shadow-lg p-6 md:p-8 order-2 lg:order-1 backdrop-blur-sm bg-white/70">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800">Send us a message</h3>
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-4" action="https://formsubmit.co/erana.chardic@gmail.com" method="POST">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

@@ -16,11 +16,11 @@ const FaqSection = () => {
     },
     {
       question: "When and where do you rehearse?",
-      answer: "We typically rehearse every Saturday from 2:00 PM to 4:00 PM at Saint Isidore Church. Additional rehearsals may be scheduled before major performances or events."
+      answer: "We typically rehearse every Saturday from 8:00 PM to 10:00 PM at Saint Isidore Church. Additional rehearsals may be scheduled before major performances or events."
     },
     {
       question: "Do I need to audition to join?",
-      answer: "We don't require formal auditions for general membership. Our choir director will assess your vocal range to place you in the appropriate section. We believe everyone has the ability to contribute to our musical ministry."
+      answer: "Yes, We required formal auditions for general membership. Our choir director will assess your vocal range to place you in the appropriate section. We believe everyone has the ability to contribute to our musical ministry."
     },
     {
       question: "Can I request your choir for my event?",

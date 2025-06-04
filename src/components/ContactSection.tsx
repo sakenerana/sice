@@ -85,9 +85,9 @@ const ContactSection = () => {
             Have questions or want to book our choir? Reach out to us!
           </p>
         </div>
-        
+
         <MusicNotes />
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div className="bg-[url(/img/palm.gif)] bg-cover bg-no-repeat rounded-lg shadow-lg p-6 md:p-8 order-2 lg:order-1 backdrop-blur-sm bg-white/70">
@@ -171,7 +171,7 @@ const ContactSection = () => {
             <div className="bg-[url(/img/palm.gif)] rounded-lg shadow-lg p-6 md:p-8 backdrop-blur-sm bg-white/70">
               <h3 className="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
               <div className="space-y-4">
-                <ContactInfoItem 
+                <ContactInfoItem
                   icon={
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                   content="Upper Bacayan, Cebu City"
                 />
 
-                <ContactInfoItem 
+                <ContactInfoItem
                   icon={
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -192,7 +192,7 @@ const ContactSection = () => {
                   content="+63 932 944 6383"
                 />
 
-                <ContactInfoItem 
+                <ContactInfoItem
                   icon={
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -204,7 +204,7 @@ const ContactSection = () => {
                   isEmail={true}
                 />
 
-                <ContactInfoItem 
+                <ContactInfoItem
                   icon={
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="12" cy="12" r="10"></circle>
@@ -219,7 +219,7 @@ const ContactSection = () => {
               <div className="mt-8">
                 <h4 className="font-medium mb-4 text-gray-800">Follow Us</h4>
                 <div className="flex gap-4">
-                  <SocialLink 
+                  <SocialLink
                     href="https://www.facebook.com/profile.php?id=100091922100082"
                     iconSrc="/img/facebook.svg"
                     alt="Facebook"
@@ -248,11 +248,11 @@ const ContactSection = () => {
 };
 
 // Reusable Contact Info Item Component
-const ContactInfoItem = ({ icon, title, content, isEmail = false }: { 
-  icon: React.ReactNode, 
-  title: string, 
-  content: string, 
-  isEmail?: boolean 
+const ContactInfoItem = ({ icon, title, content, isEmail = false }: {
+  icon: React.ReactNode,
+  title: string,
+  content: string,
+  isEmail?: boolean
 }) => (
   <div className="flex items-start gap-4">
     <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 mt-1 text-amber-600">
@@ -272,14 +272,14 @@ const ContactInfoItem = ({ icon, title, content, isEmail = false }: {
 );
 
 // Reusable Social Link Component
-const SocialLink = ({ href, iconSrc, alt }: { 
-  href: string, 
-  iconSrc: string, 
-  alt: string 
+const SocialLink = ({ href, iconSrc, alt }: {
+  href: string,
+  iconSrc: string,
+  alt: string
 }) => (
-  <a 
-    href={href} 
-    target="_blank" 
+  <a
+    href={href}
+    target="_blank"
     rel="noopener noreferrer"
     className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
     aria-label={alt}

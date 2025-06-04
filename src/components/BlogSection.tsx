@@ -69,13 +69,13 @@ const BlogSection = () => {
                   <span>By {post.author}</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
-                  <Link to={`/blog/${post.id}`} className="hover:text-sice-orange transition-colors">
+                  <Link to={`https://www.facebook.com/profile.php?id=100091922100082`} className="hover:text-sice-orange transition-colors">
                     {post.title}
                   </Link>
                 </h3>
                 <p className="text-gray-600 mb-4 flex-grow">{post.excerpt}</p>
                 <Link 
-                  to={`/blog/${post.id}`}
+                  to={`https://www.facebook.com/profile.php?id=100091922100082`}
                   className="text-amber-800 font-medium hover:underline mt-auto flex items-center"
                 >
                   Read More
